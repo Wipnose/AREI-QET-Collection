@@ -1,9 +1,12 @@
 # Folder Structure — AREI-QET-Collection
-Version: 1.0
+Version: 2.0 (refined KiCad-style structure)
 
-This document defines the folder architecture for the AREI-QET-Collection.  
-All contributors MUST follow this structure.  
-New folders may only be added after discussion in an Issue.
+This structure separates:
+- pure AREI pictograms (Symbols)
+- functional devices (Devices)
+- infrastructure elements (Infrastructure)
+
+This improves clarity, metadata usage, and AI-agent generation.
 
 ---
 
@@ -28,79 +31,48 @@ All `.elmt` files MUST be placed inside the `/AREI/` directory, organized by fun
 
 AREI/
 │
-├── Lighting/
-├── Sockets/
-├── Switches/
-├── Boxes/
-├── Data/
-├── PV/
-├── Battery/
-├── EV/
-├── HVAC/
-├── IoT/
+├── Symbols/
+│   ├── Lighting/
+│   ├── Sockets/
+│   ├── Switches/
+│   ├── Boxes/
+│   ├── Data/
+│   └── Special/
+│
+├── Devices/
+│   ├── PV/
+│   ├── Battery/
+│   ├── EV/
+│   ├── HVAC/
+│   └── IoT/
+│
+└── Infrastructure/
 ├── Cables/
-└── Special/
-
+├── Routing/
+└── Distribution/
 
 ---
 
 ## 3. Category Definitions
 
-### **Lighting/**
-Symbols related to lighting points, fixtures, and ceiling lights.
+### Symbols/
+Pure AREI pictograms.  
+Minimal metadata (label, location).  
+No manufacturer or functional properties.
 
-### **Sockets/**
-All wall outlets (single, double, grounded, etc.).
+### Devices/
+Functional equipment with metadata:
+- manufacturer
+- article_number
+- function
+- ratings (power, voltage, current)
 
-### **Switches/**
-Switches, push buttons, cross switches, etc.
-
-### **Boxes/**
-Junction boxes, central boxes, connection boxes.
-
-### **Data/**
-Data, network, telephone, communication outlets.
-
-### **PV/**
-Solar-related components:
-- panels  
-- inverters  
-- combiner boxes  
-- DC isolators  
-- AC breakers  
-
-### **Battery/**
-Residential battery systems:
-- modules  
-- BMS  
-- battery inverters  
-
-### **EV/**
-Electric vehicle charging:
-- wallboxes  
-- charging points  
-
-### **HVAC/**
-Heating, ventilation, climate control:
-- thermostats  
-- fans  
-- heat pumps  
-
-### **IoT/**
-Smart home devices:
-- hubs  
-- Zigbee  
-- Z-Wave  
-- KNX  
-
-### **Cables/**
-Cable tags, cable routes, cable identifiers.
-
-### **Special/**
-Safety and miscellaneous:
-- smoke detectors  
-- alarms  
-- sensors  
+### Infrastructure/
+Elements that describe wiring, routing, distribution:
+- cable tags
+- cable routes
+- distribution rails
+- junction infrastructure
 
 ---
 
@@ -110,12 +82,12 @@ A new category may only be added if:
 
 1. It is widely used in residential one-line diagrams  
 2. It is supported by AREI or NL/FR practice  
-3. It is not a vendor-specific niche  
-4. It is approved via a GitHub Issue discussion  
+3. It is not vendor-specific  
+4. It is approved via a GitHub Issue  
 5. It is added to:
-   - `FOLDERSTRUCTURE.md`
-   - `COMPONENT-INDEX.md`
-   - `SYNTAX-RULEBOOK.md` (if needed)
+   - FOLDERSTRUCTURE.md  
+   - COMPONENT-INDEX.md  
+   - SYNTAX-RULEBOOK.md (if needed)
 
 ---
 
@@ -132,7 +104,7 @@ A new category may only be added if:
 
 ## 6. Future Extensions
 
-This structure is designed to support:
+This structure supports:
 
 - Home Assistant integrations  
 - PV + battery hybrid systems  
@@ -140,4 +112,3 @@ This structure is designed to support:
 - EV charging  
 - NL/FR residential standards  
 - Community contributions  
-
