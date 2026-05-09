@@ -1,3 +1,10 @@
+<!--
+AI-SPECIFICATION: TRUE
+This document defines the authoritative rules and conventions for generating
+AREI-compliant residential one-line symbols for QElectroTech (.elmt).
+All AI agents MUST follow this specification exactly.
+-->
+
 AREI‑QET Residential One‑Line Symbol Rulebook (v1.1)
 (Based on AREI – FOD Economie, Belgium)
 
