@@ -19,3 +19,27 @@ AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
 LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
+
+----------------------------------------
+Additional Notice
+----------------------------------------
+
+AREI-style Symbol Disclaimer
+
+This project provides AREI-style one-line symbols intended to support
+residential electrical documentation in Belgium, the Netherlands and France.
+
+The symbols in this repository are:
+- inspired by the visual conventions used in the AREI/RGIE,
+- compatible with common European (IEC-based) schematic practices,
+- simplified for practical use in QElectroTech,
+- not official reproductions of IEC 60617 symbols,
+- not official AREI/RGIE assets.
+
+AREI/RGIE does not publish an official digital symbol library.
+Therefore, these symbols are original creations designed to reflect
+common industry practice and to support a de facto open standard for
+residential one-line diagrams.
+
+These symbols are provided under the MIT License and may be used,
+modified and redistributed freely.
