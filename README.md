@@ -42,6 +42,23 @@ The symbol collection will be built and refined based on:
 - Home Assistant users (PV, battery, domotica)
 - Residential installation practices in NL and FR
 
-## License
+## Licens - AREI-style Symbol Disclaimer
 
-MIT License – free to use, modify and contribute.
+This project provides **AREI-style one-line symbols** intended to support
+residential electrical documentation in Belgium, the Netherlands and France.
+
+These symbols are:
+
+- inspired by the visual conventions used in the AREI/RGIE,
+- compatible with common European (IEC-based) schematic practices,
+- simplified for practical use in QElectroTech,
+- original creations (not copied from IEC 60617),
+- not official AREI/RGIE assets.
+
+AREI/RGIE does not publish an official digital symbol library.
+Therefore, this project provides **open, community-driven symbols** that reflect
+common industry practice and support the development of a **de facto open standard**
+for residential one-line diagrams.
+
+All symbols are provided under the MIT License and may be used,
+modified and redistributed freely.
