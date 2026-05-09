@@ -9,7 +9,7 @@ This repository aims to provide a clean, consistent and multilingual (EN/NL/FR) 
 
 Please read the following documents first:
 
-- **SYNTAX-RULEBOOK.md** — the technical standard for `.elmt` files  
+- **AREI-QET-Residential-OneLine-RULEBOOK.md** — aimed to technically structure the many residential `.elmt` files
 - **README.md** — project overview and goals  
 
 All contributions must follow the Syntax Rulebook.  
@@ -159,4 +159,4 @@ By contributing, you agree that your contributions will be licensed under the **
 
 ---
 
-Thank you for helping improve the AREI-QET-Collection!
+Thank you for helping improve this open source AREI based QET Collection!
