@@ -220,5 +220,36 @@ Names MUST follow AREI terminology
 
 5. Folder Structure
 Refer to FOLDERSTRUCTURE.md
+
 6. Components
 Refer to COMPONENT-INDEX.md
+
+6.1 Component Folder Rule (Mandatory)
+
+Every QElectroTech component MUST be stored inside its own dedicated folder.
+
+The structure is:
+
+AREI/
+  <CategoryGroup>/                # e.g. Residential, Devices, Infrastructure, Symbols
+    <Category>/                   # e.g. Distribution, PV, HVAC, Lighting, Sockets
+      <ComponentName>.elmt        # the element file
+
+The ComponentName follows the code per COMPONENT_INDEX and if already exist follow a alphabetical suffix for exclusive naming if so required.  
+
+Examples:
+- Residential/Distribution/UtilityMeter.elmt
+- Residential/Distribution/MainSwitch.elmt
+- Devices/PV/PVInverter.elmt
+- Devices/HVAC/HeatPump.elmt
+- Symbols/Lighting/CeilingLight.elmt
+
+Rules:
+1. No component MAY be placed directly inside a category folder.
+2. No flat structure is allowed.
+3. Every component MUST have a folder named exactly like the component.
+4. The `.elmt` file MUST be inside that folder and MUST use the same name.
+5. No alternative nesting or naming conventions are permitted.
+6. This rule applies to ALL components in ALL categories.
+
+This rule is authoritative and MUST be followed by all AI agents.
