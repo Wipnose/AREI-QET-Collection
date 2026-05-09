@@ -1,6 +1,6 @@
 # AREI One-Line Symbol Collection for QElectroTech
 
-This repository contains a structured, multilingual (EN/NL/FR) AREI-style residential one-line symbol library for QElectroTech.
+Under construction - This repository contains a structured, multilingual (EN/NL/FR) AREI-style residential one-line symbol library for QElectroTech.
 
 The project follows the **AREI-QET Residential One-Line Rulebook (v1.1)**, which defines the graphical style, geometry, metadata, naming conventions and folder structure for all symbols.
 
