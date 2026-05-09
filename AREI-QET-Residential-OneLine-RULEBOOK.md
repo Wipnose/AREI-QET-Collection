@@ -219,43 +219,6 @@ No commercial terms
 Names MUST follow AREI terminology
 
 5. Folder Structure
-Code
-AREI/
-  Residential/
-    Distribution/
-      UtilityMeter/
-      MainSwitch/
-      RCD/
-      MCB/
-      Rails/
-      Earth/
-6. Component Families
-The following families are defined:
-
-Utility Meter
-
-Main Switch
-
-RCD (ALS)
-
-MCB
-
-Phase Rail
-
-Earth Rail
-
-Earth Symbol
-
-Optional: PV, EV, Battery, Heat Pump
-
-Each family MUST define:
-
-geometry
-
-terminals
-
-metadata
-
-naming
-
-variants
+Refer to FOLDERSTRUCTURE.md
+6. Components
+Refer to COMPONENT-INDEX.md
